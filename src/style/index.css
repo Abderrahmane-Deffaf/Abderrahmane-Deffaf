@@ -8,3 +8,35 @@
     @apply bg-black ; 
   }
 }
+@font-face {
+  font-family: Sugarpunch DEMO;
+  src: url('./../fonts/SugarpunchDEMO.otf');
+}
+
+.gg-chevron-left{
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
+.gg-chevron-left::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    left: 6px;
+    top: 4px
+}
+@layer components {
+  .circle {
+    @apply w-3 h-3 bg-white rounded-[50%] ; 
+}
+}

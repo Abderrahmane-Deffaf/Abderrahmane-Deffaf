@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../Text/projects";
+import link from '../assets/icons/link.svg' ; 
 
 const Projects = () => {
   let [active, setActive] = useState(0);
@@ -18,9 +19,11 @@ const Projects = () => {
   }
 
   return (
-    <div className="flex flex-col gap-[1rem]    text-center">
+    <div id="projects" className="flex flex-col gap-[1rem]    text-center">
       <div className="flex flex-col gap-[4.69rem]">
-        <h2 className="text-[1.75rem]">Personnel Projects</h2>
+        <h2 className="headers ">
+          # Personnel Projects
+        </h2>
         <div className="wrapper flex overflow-hidden ">
           {projects.map((Element) => {
             return (
@@ -29,13 +32,21 @@ const Projects = () => {
                 key={Element.image}
               >
                 <div>
-                  <h2>{Element.title}</h2>
+                  <h2 className="font-Slab font-black ">{Element.title}</h2>
                   <p>{Element.description}</p>
-                  <div>
+                  <div className="mt-[1rem] flex justify-center gap-[2rem]">
                     {Element.liveURL ? (
-                      <a href={Element.liveURL}>Live</a>
+                      <a className="link" href={Element.liveURL}>
+                        Live
+                        <img src={link} alt="link" />
+                      </a>
                     ) : null}
-                    {Element.repo ? <a href={Element.repo}>Github</a> : null}
+                    {Element.repo ? (
+                      <a className="link" href={Element.repo}>
+                        Github
+                        <img src={link} alt="link" />
+                      </a>
+                    ) : null}
                   </div>
                 </div>
                 <div className="h-[164px] w-full ">

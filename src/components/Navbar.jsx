@@ -14,9 +14,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="">
+    <div id="navbar">
       <ul className=" flex   justify-between ">
-        <ul className="flex h-fit w-full justify-between  py-[2.56rem]">
+        <ul className="flex h-fit w-full items-center justify-between  py-[2.56rem]">
           <li>
             <a>
               <img alt="logo" src={logo} />
@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div
           id="menu"
-          className=" z-10 bg-black absolute bottom-0 left-0 right-0 top-[5.3rem] flex hidden w-full flex-col items-center justify-between  pb-[3.12rem]   "
+          className=" z-30 bg-black absolute bottom-0 left-0 right-0 top-[5.3rem] flex hidden w-full flex-col items-center justify-between  pb-[3.12rem]   "
         >
           <ul className="mt-[3.12rem] flex flex-col items-center gap-[3.69rem] text-[1.375rem]">
             {links.map((Element) => {
@@ -38,7 +38,7 @@ const Navbar = () => {
                   className=" last:rounded-[5px] last:border last:border-white last:px-[2.5rem] last:py-[0.3125rem]"
                   key={Element.name}
                 >
-                  <a href={Element.link}>{Element.name}</a>
+                  <a onClick={()=>dropmenu()} href={Element.link}>{Element.name}</a>
                 </li>
               );
             })}

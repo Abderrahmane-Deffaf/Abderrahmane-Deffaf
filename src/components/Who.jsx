@@ -2,8 +2,8 @@ import React from 'react'
 
 const Who = () => {
   return (
-    <div className="my-[6rem] text-center">
-      <h2>About me</h2>
+    <div id='about' className="my-[6rem] text-center">
+      <h2 className='headers mb-[1.5rem]'>About me</h2>
       <div>
         <p>
           I'am Deffaf Abderrahmane Computer Science Student 2CP in ESTIN Bejaia

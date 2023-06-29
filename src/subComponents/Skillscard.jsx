@@ -7,7 +7,7 @@ const Skillscard = ({ icon, name, experience, level}) => {
         <img src={icon} alt={name} />
       </div>
       <div className="text-center">
-        <p className="text-[1.75rem]">{name}</p>
+        <p className="text-[1.75rem] font-bold">{name}</p>
         <p className="text-darkgray">{experience}</p>
         <p className="text-darkgray">{level}</p>
       </div>

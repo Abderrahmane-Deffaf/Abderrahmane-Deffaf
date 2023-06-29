@@ -6,19 +6,19 @@ import whatsapp from "./../assets/socials/whatsapp.svg";
 export const links = [
   {
     name: "Home",
-    link: "#",
+    link: "#home",
   },
   {
     name: "Projects",
-    link: "#",
+    link: "#projects",
   },
   {
-    name: "Tech",
-    link: "#",
+    name: "Skills",
+    link: "#skills",
   },
   {
-    name: "Contact",
-    link: "#",
+    name: "About Me",
+    link: "#about",
   },
   {
     name: "Blog",

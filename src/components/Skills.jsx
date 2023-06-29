@@ -4,8 +4,8 @@ import SkillsWrapper from '../subComponents/SkillsWrapper'
 
 const Skills = () => {
   return (
-    <section className='mt-[6rem] flex flex-col gap-[3rem]'>
-      <h2 className='text-center'>Skills</h2>
+    <section id='skills' className='mt-[6rem] flex flex-col gap-[3rem]'>
+      <h2 className='headers'># Skills</h2>
       <div className='flex flex-col gap-[4rem]'>
         {
           skills.map((Element)=> {

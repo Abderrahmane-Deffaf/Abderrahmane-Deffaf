@@ -4,11 +4,14 @@
 
 /* helpers  */
 @layer base {
+  html {
+    @apply scroll-smooth ; 
+  }
   body {
-    @apply bg-black text-white text-[1.375rem] px-[2rem] ; 
+    @apply bg-black text-white text-[1.375rem] px-[2rem] font-Roboto  ; 
   }
   h2 {
-    @apply text-[3rem]
+    @apply text-[3rem] w-fit m-auto ; 
   }
 }
 @font-face {
@@ -42,8 +45,15 @@
   .circle {
     @apply w-3 h-3 bg-white rounded-[50%] ; 
 }
+  .link {
+    @apply flex gap-[0.5rem] items-center border border-white py-1 px-3 rounded-md ; 
+  }
+  .headers {
+    @apply font-Slab text-center text-[1.75rem] font-black after:block after:h-[0.125rem] after:w-full after:rounded-md relative after:bg-white after:content-[''] after:absolute after:top-[120%]  ; 
+  }
 }
 
 .poly::after {
   clip-path: polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%);
 }
+

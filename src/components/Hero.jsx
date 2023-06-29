@@ -6,7 +6,7 @@ import planet from "../assets/planet.svg";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center gap-[1.5625rem] ">
+    <div id="home" className="flex flex-col items-center gap-[1.5625rem] ">
       <div className="flex flex-col gap-[1.5625rem] text-center">
         <div className="">
           <p className="font-Sugarpunch  text-[1.5rem]">Hi, I'am</p>

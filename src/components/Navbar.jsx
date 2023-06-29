@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="">
       <ul className=" flex   justify-between ">
-        <ul className="flex h-fit w-full justify-between px-[2.19rem] py-[2.56rem]">
+        <ul className="flex h-fit w-full justify-between  py-[2.56rem]">
           <li>
             <a>
               <img alt="logo" src={logo} />
@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div
           id="menu"
-          className=" z-10 bg-black absolute bottom-0 top-[5.3rem] flex hidden w-full flex-col items-center justify-between  pb-[3.12rem] text-white  "
+          className=" z-10 bg-black absolute bottom-0 left-0 right-0 top-[5.3rem] flex hidden w-full flex-col items-center justify-between  pb-[3.12rem]   "
         >
           <ul className="mt-[3.12rem] flex flex-col items-center gap-[3.69rem] text-[1.375rem]">
             {links.map((Element) => {

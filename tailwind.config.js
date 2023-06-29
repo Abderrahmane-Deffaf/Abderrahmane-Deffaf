@@ -5,6 +5,8 @@ module.exports = {
     colors: {
       white: "white",
       black: "black",
+      gray: "gray",
+      darkgray: "rgba(255, 255, 255, 0.55);",
     },
     fontFamily: {
       Inter: ["Inter", "sans-serif"],

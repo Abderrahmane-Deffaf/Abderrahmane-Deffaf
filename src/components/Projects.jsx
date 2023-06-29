@@ -1,20 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { projects } from "../Text/projects";
 
 const Projects = () => {
+  let [active, setActive] = useState(0);
+
+  function handleSlade(direction) {
+    let cardWidth = document.querySelector(".card").clientWidth;
+    //console.log(cardWidth) ; 
+    if (direction == "left" && active > 0) {
+      document.querySelector(".wrapper").scrollLeft -= cardWidth;
+      setActive(--active) ;  
+    } else if (active < 5 && direction == "right") {
+      //console.log(document.querySelector(".wrapper").clientWidth);
+      document.querySelector(".wrapper").scrollLeft += cardWidth;
+      setActive(++active);
+    }
+  }
+
   return (
-    <div className="flex flex-col gap-[1rem]  overflow-hidden  text-center text-white">
+    <div className="flex flex-col gap-[1rem]    text-center">
       <div className="flex flex-col gap-[4.69rem]">
-        <h2 className="text-[1.75rem]">Projects</h2>
-        <div className="flex ">
+        <h2 className="text-[1.75rem]">Personnel Projects</h2>
+        <div className="wrapper flex overflow-hidden ">
           {projects.map((Element) => {
             return (
               <div
-                className="flex min-w-full flex-col gap-[1.56rem] px-[2.19rem]"
+                className="card flex min-w-full flex-col gap-[1.56rem] "
                 key={Element.image}
               >
                 <div>
-                  <h2 className="text-[3rem]">{Element.title}</h2>
+                  <h2>{Element.title}</h2>
                   <p>{Element.description}</p>
                   <div>
                     {Element.liveURL ? (
@@ -35,19 +50,26 @@ const Projects = () => {
           })}
         </div>
       </div>
-      <div className=" flex px-[2.19rem] gap-2 mx-auto">
-        <div className="gg-chevron-left after:rotate-45"></div>
-        <div className="flex gap-2 items-center">
-          {
-            projects.map((Element) => {
-              return (
-                <div className="circle" key={Element.title}></div>
-              )
-            })
-          }
+      <div className=" mx-auto flex gap-2">
+        <div
+          onClick={() => handleSlade("left")}
+          className="gg-chevron-left after:rotate-45"
+        ></div>
+        <div className="flex items-center gap-2">
+          {projects.map((Element, index) => {
+            return (
+              <div
+                className={`circle ${active == index ? "bg-white" : "bg-gray"}`}
+                key={Element.title}
+              ></div>
+            );
+          })}
         </div>
-        
-        <div className="gg-chevron-left after:-rotate-[135deg]"></div>
+
+        <div
+          onClick={() => handleSlade("right")}
+          className="gg-chevron-left after:-rotate-[135deg]"
+        ></div>
       </div>
     </div>
   );

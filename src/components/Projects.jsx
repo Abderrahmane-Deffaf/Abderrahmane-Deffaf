@@ -19,7 +19,7 @@ const Projects = () => {
   }
 
   return (
-    <div id="projects" className="flex flex-col gap-[1rem]    text-center">
+    <div id="projects" className="flex flex-col gap-[1rem] laptop:mt-[6rem]    text-center">
       <div className="flex flex-col gap-[4.69rem]">
         <h2 className="headers ">
           # Personnel Projects
@@ -28,10 +28,11 @@ const Projects = () => {
           {projects.map((Element) => {
             return (
               <div
-                className="card flex min-w-full flex-col gap-[1.56rem] "
+                className="card flex min-w-full flex-col gap-[1.56rem] laptop:flex-row "
                 key={Element.image}
               >
-                <div>
+                <div className=" laptop:relative laptop:basis-[50%]">
+                  <div className={`laptop:background laptop:absolute laptop:top-0 laptop:left-0 laptop:bottom-0 laptop:bg-white`}></div>
                   <h2 className="font-Slab font-black ">{Element.title}</h2>
                   <p>{Element.description}</p>
                   <div className="mt-[1rem] flex justify-center gap-[2rem]">
@@ -49,7 +50,7 @@ const Projects = () => {
                     ) : null}
                   </div>
                 </div>
-                <div className="h-[164px] w-full ">
+                <div className="h-[164px] w-full laptop:h-full laptop:z-10 laptop:basis-[50%]">
                   <img
                     className="h-full w-full object-contain"
                     src={Element.image}

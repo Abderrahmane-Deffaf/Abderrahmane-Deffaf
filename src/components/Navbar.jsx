@@ -7,43 +7,55 @@ import Socials from "../subComponents/Socials";
 
 const Navbar = () => {
   const [icon, setIcon] = useState(menu);
+  const [active, setActive] = useState(0) ; 
 
-  function dropmenu() {
+  function dropmenu(index) {
+    setActive(index) ; 
     document.getElementById("menu").classList.toggle("hidden");
-    icon == menu ? setIcon(close) : setIcon(menu) ; 
+    icon == menu ? setIcon(close) : setIcon(menu);
   }
+  /* window.addEventListener("scroll", () => {
+    console.log(window.scrollY) ; 
+    if( 0 <=window.scrollY <=900 ) {
+      console.log("here")  ;
+    }else if ( 900 <= window.scrollY <= 1400 ) {
+      console.log("here 2") ; 
+    }
+  }) */
 
   return (
     <div id="navbar">
       <ul className=" flex   justify-between ">
-        <ul className="flex h-fit w-full items-center justify-between  py-[2.56rem]">
+        <ul className="flex laptop:w-fit h-fit w-full items-center justify-between  py-[2.56rem]">
           <li>
             <a>
               <img alt="logo" src={logo} />
             </a>
           </li>
-          <li  onClick={() => dropmenu()}>
+          <li className=" laptop:hidden" onClick={() => dropmenu()}>
             <img alt="burger menu" src={icon} />
           </li>
         </ul>
 
         <div
           id="menu"
-          className=" z-30 bg-black absolute bottom-0 left-0 right-0 top-[5.3rem] flex hidden w-full flex-col items-center justify-between  pb-[3.12rem]   "
+          className=" absolute bottom-0 left-0 right-0 top-[5.3rem] z-30 flex hidden w-full flex-col items-center justify-between bg-black pb-[3.12rem] laptop:static laptop:flex laptop:flex-row  laptop:bg-transparent laptop:pb-0 laptop:justify-end "
         >
-          <ul className="mt-[3.12rem] flex flex-col items-center gap-[3.69rem] text-[1.375rem]">
-            {links.map((Element) => {
+          <ul className="mt-[3.12rem] flex flex-col items-center gap-[2rem] text-[1.375rem] laptop:flex-row laptop:mt-0 ">
+            {links.map((Element, index) => {
               return (
                 <li
-                  className=" last:rounded-[5px] last:border last:border-white last:px-[2.5rem] last:py-[0.3125rem]"
+                  className={` last:rounded-[5px] last:border last:border-white last:px-[2.5rem] last:py-[0.3125rem] laptop:link-hover ${active == index ? "link-active":null}`}
                   key={Element.name}
                 >
-                  <a onClick={()=>dropmenu()} href={Element.link}>{Element.name}</a>
+                  <a onClick={() => dropmenu(index)} href={Element.link}>
+                    {Element.name}
+                  </a>
                 </li>
               );
             })}
           </ul>
-          <Socials/>
+          <Socials type={"navbar"} />
         </div>
       </ul>
     </div>

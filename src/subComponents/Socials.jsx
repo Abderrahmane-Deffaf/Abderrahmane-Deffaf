@@ -1,9 +1,9 @@
 import React from 'react'
 import { socials } from '../Text/navbar';
 
-const Socials = () => {
+const Socials = ({type}) => {
   return (
-    <ul className="flex gap-[1.5625rem] ">
+    <ul className={`flex ${type == "navbar" ? "laptop:hidden" : null }  gap-[1.5625rem] `}>
       {socials.map((Element) => {
         return (
           <li key={Element.social}>

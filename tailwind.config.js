@@ -7,6 +7,7 @@ module.exports = {
       black: "black",
       gray: "gray",
       darkgray: "rgba(255, 255, 255, 0.55);",
+      transparent: "rgba(255, 255, 255, 0);",
     },
     fontFamily: {
       Inter: ["Inter", "sans-serif"],
@@ -15,7 +16,10 @@ module.exports = {
       Slab: ["Roboto Slab", "serif"],
       Sugarpunch: ["Sugarpunch DEMO", "sans-serif"],
     },
-    extend: {},
+    screens: {
+      tablet: "550px",
+      laptop: "1024px",
+    },
   },
   plugins: [],
 };

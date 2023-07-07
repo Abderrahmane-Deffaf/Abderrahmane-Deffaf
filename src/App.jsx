@@ -10,7 +10,7 @@ import arrowUp from './assets/icons/arrowUp.svg'
 
 const App = () => {
   return (
-    <div className="">
+    <div className="max-w-[1620px] m-auto">
       <div className="fixed  right-0 top-[90%] z-20">
         <a href="#navbar" className=" ">
           <img className="  " src={arrowUp} alt="arrowup" />

@@ -13,7 +13,7 @@
 - 💞️ Enthusiast about AI/ML/DL
 - 📫 How to reach me abderrahmanedeffaf@gmail.com
 
-[![My Skills](https://skillicons.dev/icons?i=js,typescript,html,css,scss,tailwindcss,react,c,java,figma,ps,ai,pr)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,typescript,html,css,scss,tailwindcss,react,c,java,python,figma,ps,ai,pr)](https://skillicons.dev)
 
 <h3>For the Tools: </h3>
 

@@ -19,7 +19,7 @@ const Projects = () => {
   }
 
   return (
-    <div id="projects" className="flex flex-col gap-[1rem] laptop:mt-[6rem]    text-center">
+    <div id="projects" className="flex mt-[15rem] tablet:mt-[27rem] flex-col gap-[1rem] laptop:mt-[8rem]    text-center">
       <div className="flex flex-col gap-[4.69rem]">
         <h2 className="headers ">
           # Personnel Projects
@@ -31,8 +31,10 @@ const Projects = () => {
                 className="card flex min-w-full flex-col gap-[1.56rem] laptop:flex-row "
                 key={Element.image}
               >
-                <div className=" laptop:relative laptop:basis-[50%]">
-                  <div className={`laptop:background laptop:absolute laptop:top-0 laptop:left-0 laptop:bottom-0 laptop:bg-white`}></div>
+                <div className="  relative z-50 basis-[60%] laptop:relative laptop:basis-[50%]">
+                  <div
+                    className={`laptop:background laptop:absolute laptop:bottom-0 laptop:left-0 laptop:top-0 laptop:bg-white`}
+                  ></div>
                   <h2 className="font-Slab font-black ">{Element.title}</h2>
                   <p>{Element.description}</p>
                   <div className="mt-[1rem] flex justify-center gap-[2rem]">
@@ -49,10 +51,11 @@ const Projects = () => {
                       </a>
                     ) : null}
                   </div>
+                  <div className="laptop:background absolute bottom-0 left-0 right-0 top-0 -z-10 "></div>
                 </div>
-                <div className="h-[164px] w-full laptop:h-full laptop:z-10 laptop:basis-[50%]">
+                <div className=" w-full basis-[40%]  px-[2rem] laptop:z-10 laptop:h-full laptop:basis-[50%]">
                   <img
-                    className="h-full w-full object-contain"
+                    className="h-full w-full rounded-md object-contain"
                     src={Element.image}
                     alt="project"
                   />
@@ -62,6 +65,7 @@ const Projects = () => {
           })}
         </div>
       </div>
+
       <div className=" mx-auto flex gap-2">
         <div
           onClick={() => handleSlade("left")}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Skillscard = ({ icon, name, experience, level}) => {
   return (
-    <div className="flex basis-[49%] flex-col items-center justify-center gap-[1.5rem]">
+    <div className="flex basis-[24%] flex-col items-center justify-center gap-[0.5rem] ">
       <div>
         <img src={icon} alt={name} />
       </div>

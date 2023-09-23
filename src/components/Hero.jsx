@@ -8,12 +8,12 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="flex  flex-col items-center gap-[1.5625rem] laptop:mt-[4rem] "
+      className="relative flex flex-col  items-center gap-[1.5625rem] px-[2rem] laptop:mt-[4rem] "
     >
       <div className="flex flex-col gap-[1.5625rem] text-center">
         <div className="">
           <p className="font-Sugarpunch  text-[1.5rem] laptop:text-[2rem] laptop:tracking-wider">
-            Hi, I'am
+            Hi, I am
           </p>
           <h1 className="font-Sugarpunch text-[2.5rem] laptop:text-[4rem] laptop:tracking-widest">
             Deffaf <br /> Abderrahmane
@@ -23,22 +23,16 @@ const Hero = () => {
       </div>
       <Contact />
       <Socials type={"not"} />
-      <div className="flex w-full ">
-        <div className="relative h-[33rem] basis-[50%] laptop:h-0  ">
-          <img
-            className="absolute laptop:w-[60%] -left-[2rem] -top-[10rem] laptop:-top-[30rem] laptop:-left-[10rem]"
-            src={planet}
-            alt="planet"
-          />
-        </div>
-        <div className="relative basis-[50%] ">
-          <img
-            className="absolute laptop:w-[60%] -right-[7rem] laptop:-top-[30rem]"
-            src={man}
-            alt="man"
-          />
-        </div>
-      </div>
+      <img
+        className="absolute -bottom-[19rem] -left-[3rem] w-[50%] tablet:-bottom-[25rem]  tablet:w-[40%]  laptop:-left-[10rem] laptop:top-[0]  laptop:w-[30%]"
+        src={planet}
+        alt="planet"
+      />
+      <img
+        className="absolute -bottom-[15rem]  -right-[3rem]  w-[50%] tablet:-bottom-[23rem]  tablet:w-[40%] laptop:top-0 laptop:w-[30%]"
+        src={man}
+        alt="man"
+      />
     </div>
   );
 };

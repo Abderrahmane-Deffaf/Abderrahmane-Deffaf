@@ -16,6 +16,9 @@ import devtools from '../assets/skills/devtools.svg' ;
 import a11y from '../assets/skills/a11y.svg' ; 
 import performance from '../assets/skills/performance.svg' ; 
 import vite from '../assets/skills/vite.svg' ; 
+import ts from '../assets/skills/ts.svg' ; 
+import playwright from '../assets/skills/playwright.svg'
+import scrapy from '../assets/skills/scrapy.svg'
 
 
 export const skills = [
@@ -40,10 +43,16 @@ export const skills = [
         icon: js,
         level: "Professional",
       },
+      {
+        name: "TypeScript",
+        experience: "1 month",
+        icon: ts,
+        level: "Professional",
+      },
     ],
   },
   {
-    title: "libraries",
+    title: "libraries and framewoks",
     technologies: [
       {
         name: "react",
@@ -55,6 +64,12 @@ export const skills = [
         name: "tailwind css",
         experience: "+7 months",
         icon: tailwind,
+        level: "Professional",
+      },
+      {
+        name: "scrapy",
+        experience: "+2 months",
+        icon: scrapy,
         level: "Professional",
       },
     ],
@@ -96,6 +111,12 @@ export const skills = [
         experience: "+1 year",
         icon: devtools,
         level: "Professional",
+      },
+      {
+        name: "Playwright",
+        experience: "2 months",
+        icon: playwright,
+        level: "Beginner",
       },
     ],
   },

@@ -8,7 +8,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply overflow-x-hidden bg-black px-[2rem] font-Roboto text-[1.375rem] text-white;
+    @apply relative overflow-x-hidden bg-black font-Roboto text-[1.375rem] text-white;
   }
   h2 {
     @apply m-auto w-fit text-[3rem];
@@ -58,12 +58,26 @@
     @apply after:block after:h-1 after:w-full after:bg-white after:content-[''];
   }
   .background {
-    /* background: linear-gradient(
-      180deg,
+    background: linear-gradient(
+      90deg,
       rgba(52, 98, 89, 0.65) 0%,
       rgba(52, 98, 89, 0.25) 57.29%,
       rgba(52, 98, 89, 0) 100%
-    ); */
+    );
+  }
+  .background2 {
+    border-radius: 81px;
+    background: linear-gradient(
+      180deg,
+      #000 0%,
+      rgba(74, 25, 112, 0.25) 71.35%,
+      rgba(104, 35, 157, 0) 100%
+    );
+    transform: rotate(79.039deg);
+    width: 1431.644px;
+    height: 1262.234px;
+    border-radius: 81px;
+
   }
 }
 

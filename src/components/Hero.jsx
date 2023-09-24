@@ -8,9 +8,9 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="relative flex flex-col  items-center gap-[1.5625rem] px-[2rem] laptop:mt-[4rem] "
+      className="flex flex-col items-center  gap-[1.5625rem] overflow-hidden  laptop:mt-[4rem] "
     >
-      <div className="flex flex-col gap-[1.5625rem] text-center">
+      <div className="flex flex-col gap-[1.5625rem] px-[2rem] text-center">
         <div className="">
           <p className="font-Sugarpunch  text-[1.5rem] laptop:text-[2rem] laptop:tracking-wider">
             Hi, I am
@@ -23,16 +23,18 @@ const Hero = () => {
       </div>
       <Contact />
       <Socials type={"not"} />
-      <img
-        className="absolute -bottom-[19rem] -left-[3rem] w-[50%] tablet:-bottom-[25rem]  tablet:w-[40%]  laptop:-left-[10rem] laptop:top-[0]  laptop:w-[30%]"
-        src={planet}
-        alt="planet"
-      />
-      <img
-        className="absolute -bottom-[15rem]  -right-[3rem]  w-[50%] tablet:-bottom-[23rem]  tablet:w-[40%] laptop:top-0 laptop:w-[30%]"
-        src={man}
-        alt="man"
-      />
+      <div className="relative laptop:mb-[11rem] h-[20rem]  w-full tablet:h-[22rem] laptop:h-0   ">
+        <img
+          className="absolute -left-[3rem]  w-[50%]  tablet:-top-[25%] tablet:w-[40%]  laptop:-left-[10rem] laptop:-top-[25rem]  laptop:w-[30%]"
+          src={planet}
+          alt="planet"
+        />
+        <img
+          className="absolute -right-[6rem]   w-[50%]  tablet:-top-[25%] tablet:w-[40%] laptop:-top-[25rem] laptop:w-[30%]"
+          src={man}
+          alt="man"
+        />
+      </div>
     </div>
   );
 };

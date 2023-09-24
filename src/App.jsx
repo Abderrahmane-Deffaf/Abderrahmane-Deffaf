@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {createRoot} from 'react-dom/client'
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -9,10 +9,15 @@ import Footer from './components/Footer';
 import arrowUp from './assets/icons/arrowUp.svg'
 
 const App = () => {
+
   return (
-    <div className="max-w-[1620px]  m-auto">
+    <div
+      className="m-auto  max-w-[1620px]"
+    >
       <div className="fixed  right-0 top-[90%] z-20">
-        <a href="#navbar" className=" ">
+        <a
+          href="#navbar"
+        >
           <img className="  " src={arrowUp} alt="arrowup" />
           <span aria-hidden="true" className="hidden">
             scroll to navbar

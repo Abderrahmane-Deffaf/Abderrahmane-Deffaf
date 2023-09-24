@@ -8,7 +8,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply relative overflow-x-hidden bg-black font-Roboto text-[1.375rem] text-white;
+    @apply overflow-x-hidden  bg-black font-Roboto text-[1.375rem] text-white;
   }
   h2 {
     @apply m-auto w-fit text-[3rem];

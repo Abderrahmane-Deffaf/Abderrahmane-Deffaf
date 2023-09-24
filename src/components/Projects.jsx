@@ -19,11 +19,12 @@ const Projects = () => {
   }
 
   return (
-    <div id="projects" className="flex mt-[15rem] tablet:mt-[27rem] flex-col gap-[1rem] laptop:mt-[8rem]    text-center">
-      <div className="flex flex-col gap-[4.69rem]">
-        <h2 className="headers ">
-          # Personnel Projects
-        </h2>
+    <div
+      id="projects"
+      className="flex  flex-col gap-[1rem] text-center "
+    >
+      <div className="mt-[2rem] flex flex-col gap-[4.69rem]">
+        <h2 className="headers "># Personnel Projects</h2>
         <div className="wrapper flex overflow-hidden ">
           {projects.map((Element) => {
             return (

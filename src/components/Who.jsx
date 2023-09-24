@@ -2,7 +2,7 @@ import React from 'react'
 
 const Who = () => {
   return (
-    <div id='about' className="my-[6rem] text-center">
+    <div id='about' className="my-[6rem] px-[2rem] text-center">
       <h2 className='headers mb-[1.5rem]'>About me</h2>
       <div>
         <p>

@@ -3,7 +3,11 @@ import { socials } from '../Text/navbar';
 
 const Socials = ({type}) => {
   return (
-    <ul className={`flex ${type == "navbar" ? "laptop:hidden" : null }  gap-[1.5625rem] `}>
+    <ul
+      className={` px-[2rem] flex ${
+        type == "navbar" ? "laptop:hidden" : null
+      }  gap-[1.5625rem] `}
+    >
       {socials.map((Element) => {
         return (
           <li key={Element.social}>

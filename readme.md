@@ -17,4 +17,4 @@
 
 <h3>For the Tools: </h3>
 
-[![My Skills](https://skillicons.dev/icons?i=vscode,vite,git,vim)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vscode,vite,git,vim,linux,bash)](https://skillicons.dev)

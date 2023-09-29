@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { links } from "../Text/navbar";
-import logo from "../assets/logo.svg";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
 import Socials from "../subComponents/Socials";
@@ -25,14 +24,16 @@ const Navbar = () => {
 
   return (
     <div id="navbar">
-      <ul className=" flex px-[2rem]  justify-between  ">
+      <ul className=" flex justify-between  px-[2rem]  ">
         <ul className="flex h-fit w-full items-center justify-between py-[2.56rem]  laptop:w-fit">
           <li>
-            <a>
-              <img alt="logo" src={logo} />
+            <a href="#navbar" >
+              <p className=" whitespace-nowrap text-[1.5rem] laptop:text-[2rem] font-Sugarpunch">
+                &lt;Abdou /&gt;
+              </p>
             </a>
           </li>
-          <li className=" laptop:hidden" onClick={() => dropmenu()}>
+          <li tabIndex={0} className=" laptop:hidden"  onKeyDown={()=> dropmenu()} onClick={() => dropmenu()}>
             <img alt="burger menu" src={icon} />
           </li>
         </ul>

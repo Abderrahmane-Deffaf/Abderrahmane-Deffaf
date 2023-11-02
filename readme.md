@@ -9,8 +9,8 @@
  
 - 👋 Hi, I’m @abdoude12
 - 👀 I’m interested in frontend development
-- 🌱 I’m currently learning javascript
-- 💞️ Enthusiast about AI/ML/DL
+- 🌱 I’m currently learning new stuff
+- 💞️ Enthusiast about tbd
 - 📫 How to reach me abderrahmanedeffaf@gmail.com
 
 [![My Skills](https://skillicons.dev/icons?i=js,typescript,html,css,scss,tailwindcss,react,redux,nextjs,c,java,python,figma)](https://skillicons.dev)

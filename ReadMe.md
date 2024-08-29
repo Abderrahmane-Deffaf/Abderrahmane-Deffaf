@@ -6,7 +6,7 @@
 
 - **Languages:** JavaScript, Python, TypeScript, C, Java
 - **Frameworks & Libraries:** React, Next.js, Node.js, Express.js.
-- **Tools & Platforms:** GitHub, Docker
+- **Tools & Platforms:** GitHub, Docker, Nginx, Vite.
 <!-- - **Data Science & AI:**  -->
 
 <!-- ## Key Projects 📚 -->

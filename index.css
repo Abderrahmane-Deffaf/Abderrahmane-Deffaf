@@ -5,6 +5,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Oxygen", sans-serif;
@@ -14,26 +15,40 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* nav bar */
-.our-links {
+.wrapper {
   width: 100%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
 
-.gradient {
-  background: linear-gradient(
-    90deg,
-    rgba(8, 1, 119, 1) 0%,
-    rgba(2, 2, 250, 1) 50%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  height: 2px;
-}
-
+/*--------- nav bar -------------- */
 nav {
   padding-bottom: 3rem;
   padding-top: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   background: black;
+}
+nav li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+.name {
+  text-wrap: wrap;
+}
+.fa-code {
+  font-size: 100%;
+}
+
+.our-links {
+  width: 100%;
 }
 ul.our-links,
 .foter-ul {
@@ -46,24 +61,48 @@ ul.our-links,
   padding: 0;
   margin: 0;
 }
-nav li a {
-  text-decoration: none;
+
+.button {
+  background-color: magenta;
+  padding: 5px;
+  border-radius: 4px;
+}
+.button:hover {
   color: white;
-  display: block;
+  background-color: rgb(24, 156, 193);
 }
-li:first-child {
-  flex-basis: 100%;
-  text-align: center;
+a {
+  color: rgb(246, 125, 246);
 }
-.fa-code {
-  font-size: 100%;
+a:hover {
+  color: rgb(255, 0, 255);
+  text-decoration: none;
 }
+i {
+  font-size: 150%;
+  color: aqua;
+}
+i:hover {
+  color: magenta;
+}
+
+/* --------- gradient ----------- */
+.gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 1, 119, 1) 0%,
+    rgba(2, 2, 250, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 2px;
+}
+
+/* ---------- informations -------------- */
 
 #information {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  padding: 2rem 0rem 2rem 3rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -78,14 +117,93 @@ p span {
   color: aqua;
   display: block;
 }
-a {
-  color: rgb(246, 125, 246);
-}
-a:hover {
-  color: rgb(255, 0, 255);
-  text-decoration: none;
+
+/* ----------- projects ----------- */
+#f-project {
+  background-color: rgb(32, 98, 178);
 }
 
+#project-proud {
+  color: white;
+  font-size: 2rem;
+}
+.project_layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.first-project {
+  display: grid;
+  grid-template-columns: repeat(10 1fr);
+}
+.text-side {
+  grid-column: 4/11;
+  grid-row: 1/2;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.paragraph {
+  border-radius: 9px;
+  margin: 2rem 0rem;
+
+  background-color: black;
+}
+.para-section {
+  max-width: 800px;
+  padding: 13px;
+}
+
+#list-of-technologies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+}
+#list-of-technologies li {
+  text-wrap: nowrap;
+  max-width: fit-content;
+}
+
+.text-side.second {
+  grid-column: 1/10;
+  align-items: flex-start;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.h1-text {
+  color: aqua;
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+h5 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img {
+  grid-row: 1/2;
+  grid-column: 1/6;
+  box-shadow: 5px 5px 14px 8px #0e395d;
+  border-radius: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.img-2 {
+  grid-column: 9/14;
+  grid-row: 1/2;
+}
+
+/* --------- contact ----------- */
 .contact-bc {
   background: rgb(128, 48, 128);
   position: relative;
@@ -96,7 +214,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 p.contact-para {
   width: fit-content;
@@ -115,25 +233,10 @@ a.email {
   border-radius: 4px;
 }
 
-i {
-  font-size: 150%;
-  color: aqua;
-}
-i:hover {
-  color: magenta;
-}
-.button {
-  background-color: magenta;
-  padding: 5px;
-  border-radius: 4px;
-}
-.button:hover {
-  color: white;
-  background-color: rgb(24, 156, 193);
-}
+/* ----------- footer ------------- */
 
 #foter {
-  padding: 2rem;
+  padding: 1rem;
 }
 .link-foot {
   color: magenta;
@@ -149,88 +252,10 @@ footer ul li:last-child {
   text-align: center;
 }
 
-#f-project {
-  background-color: rgb(32, 98, 178);
-}
-.text-side {
-  grid-column: 4/11;
-  grid-row: 1/2;
-  order: 2;
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.first-project {
-  display: grid;
-  grid-template-columns: repeat(10 1fr);
-  padding: 2rem 1rem 3rem 3rem;
-}
-.paragraph {
-  border-radius: 9px;
-  margin: 2rem 0rem;
-
-  background-color: black;
-}
-.para-section {
-  max-width: 800px;
-  padding: 13px;
-}
-
-h4 {
-  margin: 0;
-  padding: 0;
-}
-.h1-text {
-  color: aqua;
-  margin-bottom: 0;
-  font-size: 2rem;
-}
-h5 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-#list-of-technologies {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  list-style-type: none;
-}
-img {
-  grid-row: 1/2;
-  grid-column: 1/6;
-  box-shadow: 5px 5px 14px 8px #0e395d;
-  border-radius: 10px;
-}
-#project-proud {
-  color: white;
-  font-size: 2rem;
-  padding: 1rem 3rem;
-}
-h1 {
-  margin: 0;
-}
-
-.text-side.second {
-  grid-column: 1/10;
-  align-items: flex-start;
-}
-.img-2 {
-  grid-column: 9/14;
-  grid-row: 1/2;
-}
-.first-project.second,
-.third {
-  padding: 4rem 3rem;
-}
-
 @media (max-width: 1080px) {
   .first-project {
     display: flex;
     flex-direction: column;
-  }
-  .first-project {
-    padding: 2rem 2rem 2rem 2rem;
   }
   img {
     width: 100%;
@@ -240,6 +265,5 @@ h1 {
   .text-side2 {
     position: relative;
     align-items: flex-start;
-    margin-right: 1rem;
   }
 }

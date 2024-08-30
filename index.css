@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -21,6 +22,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    padding: 5rem;
+  }
 }
 
 /*--------- nav bar -------------- */
@@ -99,6 +105,26 @@ i:hover {
 
 /* ---------- informations -------------- */
 
+.profile_section {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+}
+.profile_picture {
+  width: fit-content;
+  height: fit-content;
+  padding: 0px 1rem;
+}
+
+@media (min-width: 800px) {
+  .profile_section {
+    flex-direction: row;
+    gap: 0px;
+  }
+}
+
 #information {
   line-height: 1.5;
   display: flex;
@@ -166,6 +192,9 @@ p span {
 #list-of-technologies li {
   text-wrap: nowrap;
   max-width: fit-content;
+  background-color: #0e395d;
+  padding: 0.3rem;
+  border-radius: 4px;
 }
 
 .text-side.second {

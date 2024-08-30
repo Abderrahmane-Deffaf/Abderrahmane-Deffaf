@@ -4,13 +4,20 @@
 
 ## Technical Skills 🛠️
 
-- **Languages:** JavaScript, Python, TypeScript, C, Java
-- **Frameworks & Libraries:** React, Next.js, Node.js, Express.js.
-- **Tools & Platforms:** GitHub, Docker, Nginx, Vite.
+- **Languages:** JavaScript, Python, TypeScript, C.
+- **Frontend Technologies:** HTML, CSS, TailwindCSS, React.js, Next.js, Redux Tool Kit, Zustand
+- **Backend Technologies:** Node.js, Express.js.
+- **Databases:** MySQL, PostgreSQL, Prisma.
+- **Tools & Platforms:** Git, GitHub, Github Actions, Nginx, Vite, Playwright.
 <!-- - **Data Science & AI:**  -->
 
 <!-- ## Key Projects 📚 -->
-<!-- ## Leadership 🌟 -->
+
+## Volunteering & Leadership 🌟
+
+Leadership and communication skills, problem-solving and Team collaboration
+
+- **Development departement vice manager at Bytecraft [Aug 2023 - Jul 2024]**: Responsible for leading and managing dev team to build projects needed for the club, also organizing workshops for new members to help them get an overview about web development.
 
 <!-- ## Professional Goals 🚀 -->
 

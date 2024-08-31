@@ -264,6 +264,10 @@ h1 {
 .skills li {
   margin: 0.2rem 0px;
 }
+#skills {
+  background: rgb(0, 0, 0);
+}
+
 /* --------- contact ----------- */
 .contact-bc {
   background: rgb(128, 48, 128);

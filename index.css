@@ -231,7 +231,10 @@ h1 {
   grid-column: 9/14;
   grid-row: 1/2;
 }
-
+.see_more_projects {
+  display: flex;
+  justify-content: center;
+}
 /* --------- contact ----------- */
 .contact-bc {
   background: rgb(128, 48, 128);
@@ -294,5 +297,45 @@ footer ul li:last-child {
   .text-side2 {
     position: relative;
     align-items: flex-start;
+  }
+}
+
+/* view transition  */
+.shared_nav {
+  view-transition-name: nav;
+}
+.shared_projecet {
+  view-transition-name: firstProject;
+}
+
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(root) {
+  animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+  animation: fade-out 350ms cubic-bezier(0, 0, 0.2, 1);
+}
+::view-transition-new(root) {
+  animation: fade-in 350ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

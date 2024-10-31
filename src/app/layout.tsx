@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html lang="en">
       <head>
         <script
           src="https://kit.fontawesome.com/dab24688da.js"

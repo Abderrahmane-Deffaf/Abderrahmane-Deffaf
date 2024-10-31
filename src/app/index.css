@@ -218,7 +218,7 @@ h5 {
   margin-bottom: 1rem;
 }
 
-img {
+.img {
   grid-row: 1/2;
   grid-column: 1/6;
   box-shadow: 5px 5px 14px 8px #0e395d;
@@ -322,7 +322,7 @@ footer ul li:last-child {
     display: flex;
     flex-direction: column;
   }
-  img {
+  .img {
     width: 100%;
     order: 2;
   }

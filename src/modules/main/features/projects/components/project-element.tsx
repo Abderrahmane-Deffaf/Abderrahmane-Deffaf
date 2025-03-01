@@ -1,3 +1,4 @@
+import InfoElement from "@/components/ui/info-element";
 import { SquareArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,17 +6,22 @@ import Link from "next/link";
 export default function ProjectElement({ project }: { project: Project }) {
   return (
     <div className="embla__slide flex flex-col  gap-4">
-      <div className=" flex flex-col gap-4 lg:flex-row">
-        <div className=" basis-full space-y-4 lg:basis-1/2">
-          <h4 className=" select-none">{project.name}</h4>
+      <div className="flex flex-col gap-4  lg:flex-row">
+        <div className="basis-full space-y-4 lg:basis-1/2">
+          <h4 className="select-none">{project.name}</h4>
           <p
-            className="  select-none"
+            className="  select-none line-clamp-5"
             dangerouslySetInnerHTML={{
               __html: project.description,
             }}
           ></p>
+          <div className=" flex flex-wrap gap-1">
+            {project.tech.split(",").map((tech) => (
+              <InfoElement key={tech} topic={tech} />
+            ))}
+          </div>
         </div>
-        <div className="rounded-2xl basis-full lg:basis-1/2 overflow-hidden">
+        <div className="rounded-2xl  basis-full lg:basis-1/2 overflow-hidden">
           <Image
             src={project.image}
             alt={project.alt}

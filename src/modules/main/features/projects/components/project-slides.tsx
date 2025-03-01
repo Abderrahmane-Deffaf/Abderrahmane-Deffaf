@@ -24,7 +24,7 @@ export default function ProjectSlides({ projects }: ProjectSdlidesProps) {
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
   return (
-    <div className="embla">
+    <div className="embla space-y-2 lg:space-y-4">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {projects.map((project) => (

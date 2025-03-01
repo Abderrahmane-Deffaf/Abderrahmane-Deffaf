@@ -19,3 +19,13 @@ type Blog = {
   updated_at?: Date;
   content: string;
 };
+
+type Work = {
+  id: number;
+  created_at: Date;
+  company: string;
+  position: string;
+  date: string;
+  location: string;
+  description: string;
+};

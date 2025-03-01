@@ -1,3 +1,4 @@
+import InfoElement from "@/components/ui/info-element";
 import { formatDate } from "@/lib/format-date";
 
 type BlogInfosProps = {
@@ -15,12 +16,7 @@ export default function BlogInfos({ blog }: BlogInfosProps) {
       </div>
       <div className=" flex flex-wrap gap-2">
         {blog.topics.split(",").map((topic) => (
-          <span
-            key={topic}
-            className=" uppercase bg-muted px-2 py-1 rounded-lg border border-neutral-500 block w-fit"
-          >
-            {topic}
-          </span>
+          <InfoElement key={topic} topic={topic} />
         ))}
       </div>
     </div>

@@ -1,5 +1,5 @@
-import { getProjects } from "../get-first-project";
-import ProjectSlides from "./project-slides";
+import { getProjects } from "../../data/get-project";
+import ProjectSlides from "./components/project-slides";
 
 export default async function Projects() {
   const projects = await getProjects();

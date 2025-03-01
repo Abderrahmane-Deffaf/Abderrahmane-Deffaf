@@ -28,9 +28,9 @@ const MouseTrackerBg = () => {
 
   return (
     <div
-      className="absolute min-h-full inset-0 z-0"
+      className="absolute inset-0 z-0"
       style={{
-        background: `radial-gradient(circle at ${gradientX}% ${gradientY}%,  #032e15 1%, #000000,#000000 )`,
+        background: `radial-gradient(circle at ${gradientX}% ${gradientY}%,  #032e15 1%, #000000, #000000)`,
         transition: "background 1s ease",
       }}
     />

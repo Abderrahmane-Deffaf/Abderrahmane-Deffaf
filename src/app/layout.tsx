@@ -4,6 +4,7 @@ import "./globals.css";
 import ThemeContext from "@/contexts/theme-context";
 import NavBar from "@/components/common/nav-bar/nav-bar";
 import MouseTrackerBg from "@/components/common/mouse-tracker/mouse-tracker-bg";
+import Footer from "@/components/common/footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           {/* <MouseTrackerBg /> */}
           <NavBar />
           <main className=" relative z-10">{children}</main>
+          <Footer />
         </ThemeContext>
       </body>
     </html>

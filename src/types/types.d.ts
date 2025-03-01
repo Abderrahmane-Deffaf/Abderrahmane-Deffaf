@@ -10,3 +10,12 @@ type Project = {
   liveUrl?: string;
   githubUrl?: string;
 };
+
+type Blog = {
+  id: number;
+  created_at: Date;
+  title: string;
+  topics: string;
+  updated_at?: Date;
+  content: string;
+};

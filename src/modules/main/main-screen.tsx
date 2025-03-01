@@ -1,7 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import me from "@/assets/me.jpg";
 import Link from "next/link";
-import Projects from "./components/projects";
+import Projects from "./features/projects/projects";
+import Blogs from "./features/blogs/blogs";
 export default function MainScreen() {
   return (
     <div className="  ">
@@ -31,6 +32,7 @@ export default function MainScreen() {
           </Link>
         </div>
         <Projects />
+        <Blogs />
       </div>
     </div>
   );

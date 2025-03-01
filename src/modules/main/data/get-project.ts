@@ -13,7 +13,7 @@ export async function getProjects() {
       console.error("Error fetching first project:", error);
       return error.message;
     }
-    console.log("First project:", data);
+    //console.log("First project:", data);
     return data as Project[];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {

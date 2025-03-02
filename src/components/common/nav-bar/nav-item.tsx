@@ -26,6 +26,7 @@ export default function NavItem({
           "text-gray-400": !isActive,
         }
       )}
+      prefetch
       href={href}
     >
       {children}

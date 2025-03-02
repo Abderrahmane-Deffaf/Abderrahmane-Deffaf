@@ -9,6 +9,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 6rem;
+}
 :root {
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
@@ -209,4 +213,18 @@
 .embla__button__svg {
   width: 80%;
   height: 80%;
+}
+
+.about_link {
+  display: inline-block;
+}
+
+.about_link::before {
+  content: none;
+  width: 1rem;
+  height: 0.125rem;
+  background-color: white;
+  display: block;
+  top: 50%;
+  margin-right: 0.125rem;
 }

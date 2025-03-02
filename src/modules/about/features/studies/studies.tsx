@@ -8,7 +8,7 @@ const studies = [
 ];
 export default function Studies() {
   return (
-    <div className=" flex flex-col space-y-4">
+    <div id="studies" className=" flex flex-col space-y-4">
       <h2>Studies</h2>
       <div className=" space-y-4">
         {studies.map((study) => (

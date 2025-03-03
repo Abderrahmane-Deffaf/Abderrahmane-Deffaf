@@ -1,3 +1,5 @@
+import BlogsScreen from "@/modules/blogs/screens/blogs-screen";
+
 export default function page() {
-  return <div>Blogs</div>;
+  return <BlogsScreen />;
 }

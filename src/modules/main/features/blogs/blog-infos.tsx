@@ -1,12 +1,16 @@
 import InfoElement from "@/components/ui/info-element";
 import { formatDate } from "@/lib/format-date";
+import Link from "next/link";
 
 type BlogInfosProps = {
   blog: Blog;
 };
 export default function BlogInfos({ blog }: BlogInfosProps) {
   return (
-    <div className=" space-y-2">
+    <Link
+      href={`/blogs/${blog.id}`}
+      className=" w-fit flex flex-col gap-2 lg:gap-4"
+    >
       <h4>{blog.title}</h4>
 
       <div className=" flex flex-col gap-2">
@@ -19,6 +23,6 @@ export default function BlogInfos({ blog }: BlogInfosProps) {
           <InfoElement key={topic} topic={topic} />
         ))}
       </div>
-    </div>
+    </Link>
   );
 }

@@ -31,7 +31,7 @@ export default function AboutScreen() {
   return (
     <section>
       <div className=" wrapper py-16 relative lg:flex lg:items-start lg:gap-16 space-y-8">
-        <nav className=" hidden lg:block sticky top-[40%] left-0 h-full  p-4 ">
+        <nav className=" hidden lg:block sticky top-[30%] left-0 h-full  p-4 ">
           <ul className=" space-y-4">
             {links.map((link) => (
               <li className=" " key={link.href}>
@@ -58,7 +58,7 @@ export default function AboutScreen() {
             ))}
           </div>
         </div>
-        <div className=" flex flex-col gap-8 lg:gap-44">
+        <div className=" flex flex-col gap-8 lg:gap-16">
           <div className=" flex flex-col gap-4 items-center lg:items-start">
             <Link
               href={"mailto:a_deffaf@estin.dz"}

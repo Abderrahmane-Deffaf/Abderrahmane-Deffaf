@@ -9,11 +9,14 @@ import remarkMath from "remark-math";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
+import rehypeAutoLinkHeadings from "rehype-autolink-headings";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
 
 type BlogElementProps = {
   content: string;
 };
-export default async function BlogElement({ content }: BlogElementProps) {
+export default async function BlogDetails({ content }: BlogElementProps) {
   //const mdxSource = await serialize(source);
 
   const processor = unified()
@@ -26,12 +29,15 @@ export default async function BlogElement({ content }: BlogElementProps) {
     .use(rehypeRaw)
     .use(rehypeFormat)
     .use(rehypeSanitize)
-    .use(rehypeStringify);
+    .use(rehypeStringify)
+    .use(rehypeAutoLinkHeadings)
+    .use(rehypePrettyCode)
+    .use(rehypeSlug);
 
   const file = await processor.process(content);
   return (
     <div
-      className="prose prose-lg dark:prose-invert max-w-none select-none"
+      className="content text-white prose prose-lg dark:prose-invert max-w-fit overflow-hidden "
       dangerouslySetInnerHTML={{
         __html: String(file),
       }}

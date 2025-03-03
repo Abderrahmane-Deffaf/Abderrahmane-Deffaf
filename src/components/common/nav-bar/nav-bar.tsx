@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <header className=" fixed w-full lg:sticky lg:top-0  z-50  bottom-6 ">
-      <nav className="wrapper  py-2">
+      <nav className="wrapper  py-4">
         <ul className=" flex  lg:justify-between items-center">
           <li className=" hidden lg:block">
             <Link href="/">A.Deffaf</Link>

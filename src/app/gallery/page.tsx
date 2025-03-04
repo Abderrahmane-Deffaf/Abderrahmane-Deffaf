@@ -1,3 +1,5 @@
 export default function page() {
-  return <div>Gallery</div>;
+  return (
+    <div className="wrapper py-16 text-center">No Gallery for the moment</div>
+  );
 }

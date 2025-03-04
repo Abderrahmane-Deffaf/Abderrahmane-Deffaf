@@ -58,7 +58,7 @@ export default function AboutScreen() {
             ))}
           </div>
         </div>
-        <div className=" flex flex-col gap-8 lg:gap-16">
+        <div id="introduction" className=" flex flex-col gap-8 lg:gap-16">
           <div className=" flex flex-col gap-4 items-center lg:items-start">
             <Link
               href={"mailto:a_deffaf@estin.dz"}
@@ -72,10 +72,7 @@ export default function AboutScreen() {
             </Link>
             <h1>Deffaf Abderrahmane</h1>
             <p>Frontend Developer</p>
-            <p
-              id="Introduction"
-              className=" text-center lg:text-left text-white"
-            >
+            <p className=" text-center lg:text-left text-white">
               Computer science student, specializing in front-end web
               development for over 3 years in the industry. Adept at
               collaborating with cross-functional teams and committed to

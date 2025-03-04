@@ -6,8 +6,8 @@ import Link from "next/link";
 export default function ProjectElement({ project }: { project: Project }) {
   return (
     <div className="embla__slide flex flex-col  gap-4">
-      <div className="flex flex-col gap-4  lg:flex-row">
-        <div className="basis-full space-y-4 lg:basis-1/2">
+      <div className="flex flex-col gap-4  md:flex-row">
+        <div className="basis-full space-y-4 md:basis-1/2">
           <h4 className="select-none">{project.name}</h4>
           <p
             className="  select-none line-clamp-5"
@@ -21,7 +21,7 @@ export default function ProjectElement({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-        <div className="rounded-2xl  basis-full lg:basis-1/2 overflow-hidden">
+        <div className="rounded-2xl  basis-full md:basis-1/2 overflow-hidden">
           <Image
             src={project.image}
             alt={project.alt}

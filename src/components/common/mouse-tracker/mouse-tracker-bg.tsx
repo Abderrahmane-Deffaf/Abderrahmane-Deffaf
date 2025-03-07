@@ -5,35 +5,30 @@ const MouseTrackerBg = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    // Function to update mouse position
+    const size = window.innerWidth >= 1024 ? 800 : 480; // lg breakpoint is typically 1024px
+    const halfSize = size / 2;
     const handleMouseMove = (e: MouseEvent) => {
+      console.log("mouse move", e.clientX, e.clientY);
       setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
+        x: e.clientX - halfSize,
+        y: e.clientY - halfSize,
       });
     };
 
-    // Add event listener
+    //window.addEventListener("wheel", handleMouseWheel);
     window.addEventListener("mousemove", handleMouseMove);
+    //window.addEventListener("scroll", handleScroll);
 
-    // Clean up
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []);
-
-  // Calculate gradient position relative to window size
-  const gradientX = (mousePosition.x / window.innerWidth) * 100;
-  const gradientY = (mousePosition.y / window.innerHeight) * 100;
+  }, [window.innerWidth]);
 
   return (
     <div
-      className="absolute inset-0 z-0"
-      style={{
-        background: `radial-gradient(circle at ${gradientX}% ${gradientY}%,  #032e15 1%, #000000, #000000)`,
-        transition: "background 1s ease",
-      }}
-    />
+      style={{ left: mousePosition.x, top: mousePosition.y }}
+      className="size-[30rem] rounded-full lg:size-[50rem] transition-all duration-800 lg:duration-0 fixed inset-0 blob_gradient"
+    ></div>
   );
 };
 

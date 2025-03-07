@@ -2,11 +2,12 @@ import { getBlogById } from "../data/get-blog-by-id";
 import { formatDate } from "@/lib/format-date";
 import InfoElement from "@/components/ui/info-element";
 import BlogDetails from "../features/blog-details/blog-details";
+import ErrorMessage from "@/components/ui/error-message";
 
 export default async function BlogDetailScreen({ id }: { id: string }) {
   const blogDetails = await getBlogById(+id);
   if (typeof blogDetails === "string")
-    return <div className=" text-red-500">{blogDetails}</div>;
+    return <ErrorMessage message={blogDetails} />;
   return (
     <section>
       <div className=" wrapper py-16 space-y-8 lg:space-y-16">

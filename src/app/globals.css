@@ -231,3 +231,9 @@ html {
   top: 50%;
   margin-right: 0.125rem;
 }
+
+/* bolb  */
+.blob_gradient {
+  background: radial-gradient(circle at 50%, #05816a58, #02020250 75%);
+}
+/* CSS */

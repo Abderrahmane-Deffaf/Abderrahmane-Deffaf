@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeContext from "@/contexts/theme-context";
 import NavBar from "@/components/common/nav-bar/nav-bar";
-import MouseTrackerBg from "@/components/common/mouse-tracker/mouse-tracker-bg";
 import Footer from "@/components/common/footer/footer";
+import MouseTrackerBg from "@/components/common/mouse-tracker/mouse-tracker-bg";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html className="dark" lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative h-full`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full overflow-x-hidden  h-full`}
       >
         <ThemeContext>
-          {/* <MouseTrackerBg /> */}
+          <MouseTrackerBg />
           <NavBar />
           <main className=" relative z-10">{children}</main>
           <Footer />

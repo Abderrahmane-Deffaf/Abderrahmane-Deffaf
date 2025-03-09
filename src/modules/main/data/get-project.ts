@@ -7,7 +7,10 @@ export async function getProjects() {
     // Replace 'projects' with your actual table name
     const supabase = createClient();
 
-    const { data, error } = await supabase.from("Projects").select("*"); // Select all columns - you can specify specific columns if needed// Use single() to expect only one result
+    const { data, error } = await supabase
+      .from("Projects")
+      .select("*")
+      .order("created_at", { ascending: false }); // Select all columns - you can specify specific columns if needed// Use single() to expect only one result
 
     if (error) {
       console.error("Error fetching first project:", error);

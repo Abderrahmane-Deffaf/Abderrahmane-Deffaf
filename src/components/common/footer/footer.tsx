@@ -23,7 +23,7 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="pb-24 relative z-10">
-      <div className=" wrapper flex flex-col items-center justify-center space-y-8">
+      <div className=" wrapper flex flex-col lg:flex-row lg:justify-between  items-center justify-center gap-y-8">
         <p className=" text-center ">
           &copy; 2025 / <span>Deffaf Abderrahmane</span> / All rights reserved.
         </p>

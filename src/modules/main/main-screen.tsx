@@ -18,7 +18,7 @@ export default function MainScreen() {
             solutions.
           </p>
           <Link
-            className="rounded-3xl flex  bg-neutral-900 border border-muted w-fit items-center py-1 px-1"
+            className="rounded-3xl flex hover:bg-neutral-900/50  bg-neutral-900 border border-muted w-fit items-center py-1 px-1"
             href="/about"
           >
             <Avatar className=" border border-muted">

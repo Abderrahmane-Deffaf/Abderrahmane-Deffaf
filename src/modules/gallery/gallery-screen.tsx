@@ -1,5 +1,5 @@
-import microHack from "@/assets/gallery/micro-hack-micoclub-min.jpg";
-import nasaSpaceApps from "@/assets/gallery/nasa-space-apps-micoclub-min.jpg";
+import microHack from "@/assets/gallery/micro-hack-micoclub.jpeg";
+import nasaSpaceApps from "@/assets/gallery/nasa-space-apps-micoclub.jpeg";
 import devUnlocked1 from "@/assets/gallery/dev-unlocked-soai-1.jpg";
 import devUnlocked2 from "@/assets/gallery/dev-unlocked-soai-2.jpg";
 import Image from "next/image";
@@ -19,6 +19,7 @@ export default function GalleryScreen() {
               className=" min-w-full  rounded-3xl min-h-full "
               src={image}
               alt="gallery image"
+              loading="lazy"
             />
           ))}
         </div>

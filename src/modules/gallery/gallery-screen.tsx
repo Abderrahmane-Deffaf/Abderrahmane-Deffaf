@@ -2,10 +2,12 @@ import microHack from "@/assets/gallery/micro-hack-micoclub.jpeg";
 import nasaSpaceApps from "@/assets/gallery/nasa-space-apps-micoclub.jpeg";
 import devUnlocked1 from "@/assets/gallery/dev-unlocked-soai-1.jpg";
 import devUnlocked2 from "@/assets/gallery/dev-unlocked-soai-2.jpg";
+import estinPhotoPromo1cs from "@/assets/gallery/estin-photo-1cs.jpg";
+
 import Image from "next/image";
 
-const images1 = [devUnlocked2];
-const images2 = [microHack, nasaSpaceApps];
+const images1 = [devUnlocked2, microHack];
+const images2 = [estinPhotoPromo1cs, nasaSpaceApps];
 const images3 = [devUnlocked1];
 
 export default function GalleryScreen() {

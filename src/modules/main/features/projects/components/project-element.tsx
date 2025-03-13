@@ -21,7 +21,7 @@ export default function ProjectElement({ project }: { project: Project }) {
             ))}
           </div>
         </div>
-        <div className="rounded-2xl   basis-full md:basis-1/2 overflow-hidden">
+        <div className="rounded-2xl w-fit   basis-full md:basis-1/2 overflow-hidden">
           <Image
             src={project.image}
             alt={project.alt}

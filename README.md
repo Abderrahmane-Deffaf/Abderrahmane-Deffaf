@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+👋 Hi, I'm Deffaf Abderrahmane! I’m the Full Stack🎖️ and a computer science student focused on harnessing technology to make significant impacts in the tech industry and beyond.
 
-## Getting Started
+<!-- ## About Me  -->
 
-First, run the development server:
+## Technical Skills 🛠️
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Languages:** JavaScript, Python, TypeScript, C.
+- **Frontend Technologies:** HTML, CSS, TailwindCSS, React.js, Next.js, Redux Tool Kit, Zustand
+- **Backend Technologies:** Node.js, Express.js.
+- **Databases:** MySQL, PostgreSQL, Prisma.
+- **Tools & Platforms:** Git, GitHub, Github Actions, Nginx, Vite, Playwright.
+<!-- - **Data Science & AI:**  -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- ## Key Projects 📚 -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Volunteering & Leadership 🌟
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Leadership and communication skills, problem-solving and Team collaboration
 
-## Learn More
+- **Development departement vice manager at Bytecraft [Aug 2023 - Jul 2024]**: Responsible for leading and managing dev team to build projects needed for the club, also organizing workshops for new members to help them get an overview about web development.
 
-To learn more about Next.js, take a look at the following resources:
+<!-- ## Professional Goals 🚀 -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Connect with Me 📬
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- 🐦 [Twitter](https://x.com/deffaf_ab)
+- 📫 [Email](mailto:a_deffaf@estin.dz)
+- 🔗 [LinkedIn](https://www.linkedin.com/in/abderrahmene-deffaf-180598257/)
+- 🛜 [Website](https://abderrahmane-deffaf.vercel.app/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I’m looking forward to collaborating on projects that are at the intersection of technology and social good. Let’s connect! 🌍

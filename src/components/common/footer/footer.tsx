@@ -1,6 +1,7 @@
 import github from "@/assets/github.svg";
 import linkedin from "@/assets/linkedin.svg";
 import mail from "@/assets/mail.svg";
+import cv from "./../../../assets/cv.png";
 import Image from "next/image";
 
 const socials = [
@@ -19,6 +20,11 @@ const socials = [
     url: "mailto:a_deffaf@estin.com",
     icon: mail,
   },
+  {
+    name: "CV",
+    url: "/cv.pdf",
+    icon: cv,
+  },
 ];
 export default function Footer() {
   return (
@@ -31,9 +37,9 @@ export default function Footer() {
           {socials.map((social) => (
             <a
               href={social.url}
-              target="_blank"
-              rel="noreferrer"
               key={social.name}
+              target="_blank"
+              download={social.name === "CV" && "cv.pdf"}
             >
               <Image
                 className=" size-10 "

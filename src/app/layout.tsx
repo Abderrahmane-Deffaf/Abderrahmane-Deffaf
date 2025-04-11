@@ -27,17 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="dark" lang="en">
+    <ThemeContext>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative w-full overflow-x-hidden  h-full`}
       >
-        <ThemeContext>
-          <MouseTrackerBg />
-          <NavBar />
-          <main className=" relative z-10">{children}</main>
-          <Footer />
-        </ThemeContext>
+        <MouseTrackerBg />
+        <NavBar />
+        <main className=" relative z-10">{children}</main>
+        <Footer />
       </body>
-    </html>
+    </ThemeContext>
   );
 }

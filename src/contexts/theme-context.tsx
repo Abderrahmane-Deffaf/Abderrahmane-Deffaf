@@ -35,12 +35,12 @@ export const themeContext = createContext<ThemeContextType>({
 
 export default function ThemeContext({ children }: PropsWithChildren) {
   const [currentTheme, setCurrentTheme] = useState<Theme>("dark");
-  /* useEffect(() => {
+  useEffect(() => {
     setCurrentTheme(getSystemTheme());
-  }, []); */
+  }, []);
   return (
     <themeContext.Provider value={{ currentTheme, setCurrentTheme }}>
-      <div data-theme={currentTheme}>{children}</div>
+      <html className={currentTheme}>{children}</html>
     </themeContext.Provider>
   );
 }

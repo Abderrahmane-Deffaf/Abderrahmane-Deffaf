@@ -1,18 +1,23 @@
 "use server";
+import { createClient } from "@/lib/server";
 
 export async function getProjects() {
   try {
     // Assuming your table is called 'projects'
     // Replace 'projects' with your actual table name
-    const protocol = process.env.NODE_ENV === "production" ? "https" : "http";
-    const host = process.env.VERCEL_URL || "localhost:3000";
-    const baseUrl = `${protocol}://${host}`;
-    const res = await fetch(`${baseUrl}/api/get-projects`, {});
-    const data = await res.json();
-    if (data?.data) {
-      return data.data as Project[];
+    const supabase = createClient();
+
+    const { data, error } = await supabase
+      .from("Projects")
+      .select("*")
+      .order("created_at", { ascending: false }); // Select all columns - you can specify specific columns if needed// Use single() to expect only one result
+
+    if (error) {
+      console.error("Error fetching first project:", error);
+      return error.message;
     }
-    return data?.error as string;
+    //console.log("First project:", data);
+    return data as Project[];
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   } catch (error: any) {
     console.error("Unexpected error:", error);

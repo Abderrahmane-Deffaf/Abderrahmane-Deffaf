@@ -21,10 +21,10 @@ const links = [
     slug: "blogs",
   },
   {
-    name: "gallery",
-    href: "/gallery",
+    name: "Certs",
+    href: "/certs",
     icon: Image,
-    slug: "gallery",
+    slug: "certs",
   },
 ];
 export default function MainBar() {

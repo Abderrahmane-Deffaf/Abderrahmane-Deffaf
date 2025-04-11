@@ -39,7 +39,8 @@ export default function Footer() {
               href={social.url}
               key={social.name}
               target="_blank"
-              download={social.name === "CV" && "cv.pdf"}
+              rel="noopener noreferrer"
+              {...(social.name === "CV" ? { download: "cv.pdf" } : {})}
             >
               <Image
                 className=" size-10 "

@@ -1,5 +1,5 @@
 import Projects from "./features/projects/projects";
-import Blogs from "./features/blogs/blogs";
+// import Blogs from "./features/blogs/blogs";
 import Infos from "./features/infos/infos";
 export default function MainScreen() {
   return (

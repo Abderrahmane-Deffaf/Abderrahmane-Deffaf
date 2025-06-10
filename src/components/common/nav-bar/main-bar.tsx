@@ -1,13 +1,6 @@
 import { BookMarked, CircleUser, House, Image } from "lucide-react";
 import NavItem from "./nav-item";
-/* 
-{
-    name: "blogs",
-    href: "/blogs",
-    icon: BookMarked,
-    slug: "blogs",
-  },
-*/
+
 const links = [
   {
     name: "Home",
@@ -21,9 +14,14 @@ const links = [
     icon: CircleUser,
     slug: "about",
   },
-
   {
-    name: "Certifications",
+    name: "blogs",
+    href: "/blogs",
+    icon: BookMarked,
+    slug: "blogs",
+  },
+  {
+    name: "Certs",
     href: "/certs",
     icon: Image,
     slug: "certs",
@@ -43,7 +41,7 @@ export default function MainBar() {
           name={link.name}
           key={link.href}
         >
-          <link.icon size={16}></link.icon>
+          <link.icon></link.icon>
         </NavItem>
       ))}
     </div>

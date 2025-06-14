@@ -2,7 +2,7 @@ const studies = [
   {
     title: "Computer Science",
     location: "ESTIN de Bejaia",
-    date: "2021-2026",
+    date: "2020-2025",
     speciality: "AI & DS",
   },
 ];

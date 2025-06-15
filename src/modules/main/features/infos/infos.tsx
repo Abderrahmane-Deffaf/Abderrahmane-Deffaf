@@ -10,7 +10,7 @@ export default function Infos() {
         Full-Stack Developer Frontend-Oriented
       </h1>
       <p className=" w-full lg:w-[50%]">
-        Computer science graduate, specializing in web development for over 3
+        Computer science degree, specializing in web development for over 3
         years in the industry. <br /> Adept at collaborating with
         cross-functional teams and committed to delivering high-quality
         solutions.

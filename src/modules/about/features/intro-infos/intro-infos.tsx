@@ -20,10 +20,10 @@ export default function IntroInfos() {
       <h1>Deffaf Abderrahmane</h1>
       <p>Full Stack Developer</p>
       <p className=" text-center lg:text-left text-white">
-        Computer science graduate, full stack developer specializing in
-        front-end development for over 3 years in the industry. Adept at
-        collaborating with cross-functional teams and committed to delivering
-        high-quality solutions.
+        Computer science degree, full stack developer specializing in front-end
+        development for over 3 years in the industry. Adept at collaborating
+        with cross-functional teams and committed to delivering high-quality
+        solutions.
       </p>
     </div>
   );

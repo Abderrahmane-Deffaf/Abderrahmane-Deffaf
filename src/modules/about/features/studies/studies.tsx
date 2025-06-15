@@ -2,7 +2,6 @@ const studies = [
   {
     title: "Computer Science",
     location: "ESTIN de Bejaia",
-    date: "2020-2025",
     speciality: "AI & DS",
   },
 ];
@@ -15,9 +14,7 @@ export default function Studies() {
           <div key={study.title} className="">
             <h4>{study.title}</h4>
             <p>{study.location}</p>
-            <p>
-              {study.speciality} - {study.date}
-            </p>
+            <p>{study.speciality}</p>
           </div>
         ))}
       </div>

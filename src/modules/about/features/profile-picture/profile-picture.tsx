@@ -13,7 +13,7 @@ export default function ProfilePicture() {
       </Avatar>
       <p className=" flex gap-1 text-center  text-white">
         <Image className=" size-6" src={world} alt="world" />
-        Algeria/BBA
+        France / Versailles
       </p>
       <div className=" flex gap-2">
         {["Arabic", "English", "French"].map((lang) => (

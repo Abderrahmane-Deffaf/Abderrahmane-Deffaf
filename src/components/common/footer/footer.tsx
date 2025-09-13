@@ -17,7 +17,7 @@ const socials = [
   },
   {
     name: "Mail",
-    url: "mailto:a_deffaf@estin.com",
+    url: "mailto:deabdou55@gmail.com",
     icon: mail,
   },
   {

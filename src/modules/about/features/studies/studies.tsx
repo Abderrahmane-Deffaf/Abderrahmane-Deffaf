@@ -1,5 +1,10 @@
 const studies = [
   {
+    title: "DataScale",
+    location: "UVSQ de Versailles",
+    speciality: "AI & DS",
+  },
+  {
     title: "Computer Science",
     location: "ESTIN de Bejaia",
     speciality: "AI & DS",

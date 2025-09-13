@@ -6,11 +6,9 @@ import Link from "next/link";
 export default function Infos() {
   return (
     <div className=" space-y-4 lg:space-y-8">
-      <h1 className=" w-full lg:w-[50%]">
-        Full-Stack Developer Frontend-Oriented
-      </h1>
+      <h1 className=" w-full lg:w-[50%]">Full-Stack Developer</h1>
       <p className=" w-full lg:w-[50%]">
-        Computer science degree, specializing in web development for over 3
+        Data Science and AI student, specializing in web development for over 3
         years in the industry. <br /> Adept at collaborating with
         cross-functional teams and committed to delivering high-quality
         solutions.

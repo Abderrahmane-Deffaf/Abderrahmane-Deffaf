@@ -8,7 +8,7 @@ export default function IntroInfos() {
       className=" flex flex-col gap-4 items-center lg:items-start"
     >
       <Link
-        href={"mailto:a_deffaf@estin.dz"}
+        href={"mailto:deabdou55@gmail.com"}
         className=" border flex items-center border-green-700  bg-green-600/20 w-fit rounded-4xl py-2 px-3  gap-2"
       >
         <Mail color="green" />
@@ -20,10 +20,10 @@ export default function IntroInfos() {
       <h1>Deffaf Abderrahmane</h1>
       <p>Full Stack Developer</p>
       <p className=" text-center lg:text-left text-white">
-        Computer science degree, full stack developer specializing in front-end
-        development for over 3 years in the industry. Adept at collaborating
-        with cross-functional teams and committed to delivering high-quality
-        solutions.
+        Data Science and AI student, full stack developer specializing in
+        front-end development for over 3 years in the industry. Adept at
+        collaborating with cross-functional teams and committed to delivering
+        high-quality solutions.
       </p>
     </div>
   );
